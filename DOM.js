@@ -65,3 +65,25 @@ documnet.querySelector('h1').classList.remove("coolTitle");
 //Con esto, estamos diciendo que nos diga el padre del tercer li en el documento
 document.querySelector("li")[2].parentElement;
 output: <ul>...</ul>
+
+//Con esto, le estamos diciendo que nos diga los hijos que están dentro del primer ul del documento
+document.querySelector("ul").children;
+output: <li>...</li>, <li>...</li> etc
+
+
+//Aqui lo que se intenta explicar es que para cada query es mejor guardarlo en una variable y de esta forma llamar a la variable cuando se necesite y no solicitar todo el query otra vez. A estos selectors se les llama CACHE selectors. 
+
+document.querySelector('h1');
+document.querySelector('h1');
+document.querySelector('h1');
+document.querySelector('h1');
+
+This is the same as:
+
+let firstH1 = document.querySelector("h1");
+
+firstH1;
+firstH1;
+firstH1;
+firstH1;
+
