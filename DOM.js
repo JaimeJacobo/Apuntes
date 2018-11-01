@@ -87,3 +87,33 @@ firstH1;
 firstH1;
 firstH1;
 
+
+
+
+
+// Important part where I'm gonna create a new div, pharagraph and text in the DOM and then I am going to introduce it to the WP. 
+
+
+// first, I create a div to the DOM
+let div = document.createElement("div");
+
+//I create a paragraph in the DOM
+let paragraph = document.createElement("p");
+
+//I create a node to the DOM
+let text = document.createTextNode("faith");
+
+//I select the first body in the document, aka the body
+let body= document.querySelector('body')
+
+//I add the div, that is in the DOM, and add it to the body, that is in the WP.
+body.appendChild(div)
+
+//I add a pharagraph, that is in the DOM, and add it to the body, that is in the WP.
+body.appendChild(paragraph);
+
+//I add the text, which is in the WP, and add it to the pharagraph, that is in the WP
+paragraph.appendChild(text);
+
+
+//now the text is shown on the screen because it now exists on the WP and not on the DOM
