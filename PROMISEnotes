@@ -1,0 +1,33 @@
+
+
+//PROMISES NOTES
+
+
+
+
+
+let blah = new Promise(function(resolve, reject){
+
+  if(5 > 1){
+    resolve('yes it worked')
+
+  } else {
+    reject('no, it did not work')
+  }
+
+});
+
+//We are not going to write promisses, we are only going to use them
+
+//.then is for accepting promises, and .catch for rejected promises
+
+
+blah
+
+.then((w)=>{
+  console.log(w)
+  })
+  
+  .catch((theErrorthing)=>{
+
+  })
