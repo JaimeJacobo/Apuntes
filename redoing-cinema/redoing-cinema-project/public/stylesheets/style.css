@@ -1,0 +1,21 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+#allContent {
+  background-image: url("../images/cinema.jpg");
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%; }
+
+#cinemaIronhackText {
+  color: white; }
+
+/*# sourceMappingURL=style.css.map */
